@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Hakkai19z.github.io/portfolio",
   "name": "edrea-tailwind-react",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +8,8 @@
     "dev": "concurrently \"next dev\" \"npm run compileCss\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
