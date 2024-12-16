@@ -1,0 +1,551 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #a2a2a2;
+  --pink-color: #eb4a4c;
+  --white-color: #fff;
+}
+
+@layer components {
+  ul,
+  li {
+    @apply p-0 m-0;
+  }
+  a {
+    @apply no-underline;
+  }
+  html {
+    @apply overflow-x-hidden p-0 m-0;
+  }
+  body {
+    @apply overflow-x-hidden w-full font-mulish text-[16px] leading-[1.7] tracking-[0.2px] font-normal bg-black text-main-color;
+  }
+  svg {
+    @apply fill-current w-[15px] h-[15px];
+  }
+  img.svg {
+    @apply w-[15px] h-[15px];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold leading-[1.3] font-poppins text-white-color;
+  }
+  h1 {
+    @apply text-[45px];
+  }
+  h2 {
+    @apply text-[36px];
+  }
+  h3 {
+    @apply text-[30px];
+  }
+  h4 {
+    @apply text-[24px];
+  }
+  h5 {
+    @apply text-[20px];
+  }
+  h6 {
+    @apply text-[16px];
+  }
+  .edrea_tm_all_wrap {
+    @apply w-full min-h-[100vh] clear-both float-left relative;
+  }
+  .edrea_tm_all_wrap,
+  .edrea_tm_all_wrap * {
+    @apply box-border;
+  }
+  .waves {
+    @apply fixed inset-0 -z-[1];
+  }
+  .edrea_tm_topbar .topbar_inner {
+    @apply pt-[20px];
+  }
+  .edrea_tm_topbar .hamburger {
+    @apply p-0;
+  }
+  .edrea_tm_topbar .hamburger-inner,
+  .edrea_tm_topbar .hamburger-inner:after,
+  .edrea_tm_topbar .hamburger-inner:before {
+    @apply w-[30px] h-[2px] bg-white-color;
+  }
+  .edrea_tm_topbar .hamburger.is-active .hamburger-inner,
+  .edrea_tm_topbar .hamburger.is-active .hamburger-inner:after,
+  .edrea_tm_topbar .hamburger.is-active .hamburger-inner:before {
+    @apply bg-white-color;
+  }
+  .edrea_tm_topbar .trigger {
+    @apply relative top-[5px];
+  }
+  .edrea_tm_topbar .hamburger-box {
+    @apply w-[30px];
+  }
+  .edrea_tm_mobile_menu.opened {
+    @apply right-0;
+  }
+  .edrea_tm_mobile_menu .menu_list ul li.active a {
+    @apply text-pink-color;
+  }
+  .edrea_tm_header .menu ul li.active a {
+    @apply text-pink-color;
+  }
+  .edrea_tm_header .menu ul li a:hover {
+    @apply text-pink-color;
+  }
+  .edrea_tm_button {
+    @apply w-full h-auto clear-both float-left relative z-[5];
+  }
+  .edrea_tm_button a {
+    @apply text-white-color inline-block bg-pink-color px-[40px] py-[10px] text-center rounded-[50px] font-poppins transition-all duration-300;
+  }
+  .edrea_tm_button a:hover {
+    @apply bg-white-color text-black;
+  }
+  .edrea_tm_button.full a {
+    @apply block;
+  }
+  .edrea_tm_section {
+    @apply absolute inset-0 overflow-hidden overflow-y-scroll opacity-0 invisible z-[8];
+  }
+  .edrea_tm_section.animated {
+    @apply opacity-100 visible z-10;
+  }
+  .edrea_tm_section.active {
+    @apply opacity-100 visible z-10;
+  }
+  .edrea_tm_section.hidden {
+    @apply opacity-0 invisible z-[9];
+  }
+  .edrea_tm_section::-webkit-scrollbar {
+    @apply w-0;
+  }
+  .edrea_tm_section .section_inner {
+    @apply relative w-full min-h-full flex items-center;
+  }
+  .edrea_tm_modalbox {
+    @apply fixed top-0 left-0 right-0 h-[100vh] z-20 opacity-0 invisible bg-[rgba(0,0,0,1)] transition-all duration-300;
+  }
+  .edrea_tm_modalbox.opened {
+    @apply opacity-100 visible;
+  }
+  .edrea_tm_modalbox .box_inner {
+    @apply absolute top-[70px] bottom-[70px] w-[800px] left-1/2 rounded-[10px] translate-x-[-50%] bg-[#222] z-[1] opacity-0 invisible mt-[-20px] delay-300 transition-all duration-300;
+  }
+  .edrea_tm_modalbox.opened .box_inner {
+    @apply opacity-100 visible mt-0;
+  }
+  .edrea_tm_modalbox .close {
+    @apply fixed left-full top-0 ml-[30px] z-10;
+  }
+  .edrea_tm_modalbox .close a {
+    @apply block w-[40px] h-[40px] underline text-white-color border-solid border-2 border-white-color rounded-[10px] relative transition-all duration-300;
+  }
+  .edrea_tm_modalbox .close a:hover {
+    @apply rounded-full;
+  }
+  .edrea_tm_modalbox .close a i {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
+  .edrea_tm_modalbox .description_wrap {
+    @apply relative w-full h-full float-left overflow-hidden overflow-y-scroll;
+  }
+  .edrea_tm_modalbox .description_wrap:before {
+    @apply fixed content-[""] top-0 left-0 right-0 h-[50px] bg-[#222] z-[7] rounded-t-[10px];
+  }
+  .edrea_tm_modalbox .description_wrap:after {
+    @apply fixed content-[""] bottom-0 left-0 right-0 h-[50px] bg-[#222] z-[7] rounded-b-[10px];
+  }
+  .edrea_tm_modalbox .description_wrap::-webkit-scrollbar {
+    @apply w-0;
+  }
+  .edrea_tm_hidden_content {
+    @apply absolute -z-[111] invisible opacity-0 hidden;
+  }
+  .edrea_tm_main_title {
+    @apply w-full h-auto clear-both float-left border-dashed border-[rgba(255,255,255,.15)] border-b pb-[20px];
+  }
+  .edrea_tm_main_title h3 {
+    @apply font-bold;
+  }
+  .edrea_tm_main_title span {
+    @apply font-bold;
+  }
+  .edrea_tm_full_link {
+    @apply absolute inset-0 z-[5];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .top_image {
+    @apply relative mb-[25px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .top_image img {
+    @apply relative opacity-0 min-w-full;
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .top_image .main {
+    @apply absolute inset-0 bg-no-repeat bg-cover bg-center rounded-[10px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title {
+    @apply w-full float-left mb-[25px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title h3 {
+    @apply text-[25px] mb-[3px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title a {
+    @apply text-main-color transition-all duration-300;
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title a:hover {
+    @apply text-white-color;
+  }
+  .edrea_tm_modalbox .news_popup_details .top_image {
+    @apply relative mb-[25px];
+  }
+  .edrea_tm_modalbox .news_popup_details .top_image img {
+    @apply relative opacity-0 min-w-full;
+  }
+  .edrea_tm_modalbox .news_popup_details .top_image .main {
+    @apply absolute inset-0 bg-no-repeat bg-cover bg-center rounded-[10px];
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title {
+    @apply w-full float-left mb-[25px];
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title h3 {
+    @apply text-[25px] mb-[3px];
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title a {
+    @apply text-main-color transition-all duration-300;
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title a:hover {
+    @apply text-white-color;
+  }
+  .oki_progress {
+    @apply w-full h-auto clear-left float-left mt-[30px];
+  }
+  .progress_inner {
+    @apply w-full mb-[15px];
+  }
+  .progress_inner:last-child {
+    @apply mb-[0px];
+  }
+  .progress_inner > span {
+    @apply mb-[5px] w-full block text-left;
+  }
+  .progress_inner span.number {
+    @apply float-right;
+  }
+  .progress_inner .background {
+    @apply bg-[rgba(255,255,255,.15)] w-full min-w-full relative h-[2px];
+  }
+  .progress_inner .background .bar_in {
+    @apply h-full bg-pink-color w-0 overflow-hidden;
+  }
+  .progress_inner .background .bar {
+    @apply h-full w-0;
+  }
+  .circular_progress_bar .list_inner:after {
+    @apply content-[""] absolute w-[110px] h-[110px] border-solid border-[rgba(255,255,255,.15)] border-2 left-0 top-0 rounded-[50%] z-[-1];
+  }
+  .circular_progress_bar .number {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+  }
+  .edrea_tm_modalbox .about_popup_details .timeline .list ul:before {
+    @apply content-[""] absolute w-[1px] h-full top-0 left-0 bg-[rgba(255,255,255,.15)];
+  }
+  .edrea_tm_modalbox .about_popup_details .timeline .list ul li:before {
+    @apply content-[""] absolute w-[12px] h-[12px] bg-pink-color rounded-full border-solid border-pink-color border left-[-6px] top-[12px];
+  }
+  .edrea_tm_modalbox
+    .about_popup_details
+    .testimonial
+    .owl-carousel
+    .owl-stage-outer {
+    @apply overflow-hidden;
+  }
+  .edrea_tm_modalbox
+    .about_popup_details
+    .testimonial
+    .owl-carousel
+    .owl-stage-outer {
+    @apply overflow-visible;
+  }
+  .edrea_tm_modalbox .about_popup_details .testimonial .owl-item.active {
+    @apply opacity-100;
+  }
+  .edrea_tm_modalbox .about_popup_details .testimonial .owl-item {
+    @apply opacity-0;
+  }
+  .edrea_tm_portfolio .portfolio_list .list_inner:hover .details {
+    @apply bottom-[20px];
+  }
+  /* .edrea_tm_contact .empty_notice{
+        @apply text-[#f52225] mb-[7px] hidden text-left font-medium;
+    }
+    .edrea_tm_contact .contact_error{
+        @apply text-[#f52225] text-left font-medium;
+    }
+    .edrea_tm_contact .returnmessage{
+        @apply text-[#3A00FF] text-left font-medium;
+    } */
+
+  /*----------------------------------------------------*/
+  /*     MEDIA QUERIES FOR SMALL DEVICES                */
+  /*----------------------------------------------------*/
+
+  /******** Larger Screens *********/
+
+  body {
+    @apply large:text-[15px];
+  }
+  .edrea_tm_header {
+    @apply large:w-[800px];
+  }
+  .edrea_tm_header .header_inner {
+    @apply large:pt-[30px];
+  }
+  .edrea_tm_content {
+    @apply large:top-[80px] large:bottom-[80px] large:w-[800px];
+  }
+  .edrea_tm_home .name {
+    @apply large:text-[55px] large:mb-[17px];
+  }
+  .edrea_tm_home .job {
+    @apply large:text-[23px] large:mb-[32px];
+  }
+  .edrea_tm_about .right .short .name {
+    @apply large:text-[32px] large:mb-[12px];
+  }
+  .edrea_tm_about .right .short {
+    @apply large:pb-[25px] large:mb-[30px];
+  }
+  .edrea_tm_about .right {
+    @apply large:pl-[75px];
+  }
+  .edrea_tm_about .right text {
+    @apply large:mb-[30px];
+  }
+  .edrea_tm_modalbox .box_inner {
+    @apply large:w-[700px] large:top-[35] large:bottom-[35px];
+  }
+  .edrea_tm_modalbox .close {
+    @apply large:ml-[20px];
+  }
+  .edrea_tm_modalbox .close a {
+    @apply large:w-[35px] large:h-[35px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left {
+    @apply large:w-[35%];
+  }
+  .edrea_tm_modalbox .about_popup_details .right {
+    @apply large:pl-[35%];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .left_inner {
+    @apply large:px-[25px] large:py-[30px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .short .name {
+    @apply large:text-[19px] large:mb-[5px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .list ul li {
+    @apply large:pb-[5px] large:mb-[5px];
+  }
+  .edrea_tm_button a {
+    @apply large:px-[40px] large:py-[8px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .list ul li span {
+    @apply large:pl-[32px] large:text-[14px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .list ul li i {
+    @apply large:text-[15px];
+  }
+  .edrea_tm_contact .wrapper {
+    @apply large:pt-[50px];
+  }
+  .edrea_tm_portfolio .portfolio_list {
+    @apply large:pt-[50px];
+  }
+  .edrea_tm_news .news_list {
+    @apply large:pt-[50px];
+  }
+  .edrea_tm_news .news_list .image {
+    @apply large:max-h-[150px];
+  }
+  .edrea_tm_news .news_list .details {
+    @apply large:pt-[25px] large:pr-[20px] large:pb-[22px] large:pl-[20px];
+  }
+
+  /******** Middle Screens *********/
+
+  .mouse-cursor {
+    @apply middle:hidden;
+  }
+  #preloader {
+    @apply middle:hidden;
+  }
+  .edrea_tm_header {
+    @apply middle:hidden;
+  }
+  .edrea_tm_topbar {
+    @apply middle:block;
+  }
+  .edrea_tm_content {
+    @apply middle:w-full middle:top-[70px] middle:bottom-[70px];
+  }
+  .edrea_tm_home {
+    @apply middle:py-0 middle:px-[20px];
+  }
+  .edrea_tm_about {
+    @apply middle:flex-col middle:items-baseline middle:px-[20px] middle:py-0;
+  }
+  .edrea_tm_about .left {
+    @apply middle:w-full middle:mb-[40px];
+  }
+  .edrea_tm_about .right {
+    @apply middle:w-full middle:pl-0;
+  }
+  .edrea_tm_about .right .short .name {
+    @apply middle:text-[30px] middle:mb-[13px];
+  }
+  .edrea_tm_about .right .short .job {
+    @apply middle:text-[16px];
+  }
+  .edrea_tm_about .right .short {
+    @apply middle:mb-[19px] middle:pb-[25px];
+  }
+  .edrea_tm_modalbox .box_inner {
+    @apply middle:w-[700px];
+  }
+  .edrea_tm_modalbox .close {
+    @apply middle:left-auto middle:right-[10px] middle:top-[10px];
+  }
+  .edrea_tm_modalbox .close a {
+    @apply middle:w-[30px] middle:h-[30px];
+  }
+  .edrea_tm_modalbox .close a i {
+    @apply middle:text-[13px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left {
+    @apply middle:relative middle:w-full middle:border-0;
+  }
+  .edrea_tm_modalbox .about_popup_details .right {
+    @apply middle:relative middle:p-0;
+  }
+  .edrea_tm_modalbox .about_popup_details .left .avatar_image {
+    @apply middle:max-w-[50%];
+  }
+  .edrea_tm_modalbox .about_popup_details .right .right_inner {
+    @apply middle:pt-[20px] middle:pr-[20px] middle:pb-[50px] middle:pl-[20px];
+  }
+  .edrea_tm_modalbox .about_popup_details .left .left_inner {
+    @apply middle:py-[50px] middle:px-[20px];
+  }
+  .edrea_tm_main_title h3 {
+    @apply middle:text-[26px];
+  }
+  .edrea_tm_portfolio {
+    @apply middle:py-[0px] middle:px-[20px];
+  }
+  .edrea_tm_swiper_progress {
+    @apply middle:mt-[25px];
+  }
+  .edrea_tm_news {
+    @apply middle:py-[0px] middle:px-[20px];
+  }
+  .edrea_tm_news .news_list .image {
+    @apply middle:max-h-full;
+  }
+  .edrea_tm_contact {
+    @apply middle:py-[0px] middle:px-[20px] middle:pt-[70px];
+  }
+  .edrea_tm_contact .wrapper {
+    @apply middle:flex-col middle:items-baseline;
+  }
+  .edrea_tm_contact .wrapper .left {
+    @apply middle:p-0 middle:w-full middle:mb-[20px];
+  }
+  .edrea_tm_contact .wrapper .right {
+    @apply middle:p-0 middle:w-full;
+  }
+  .edrea_tm_contact .fields .first ul {
+    @apply middle:m-0;
+  }
+  .edrea_tm_contact .fields .first ul li {
+    @apply middle:w-full middle:pl-[0px];
+  }
+  .edrea_tm_contact .fields .first ul li:first-child {
+    @apply middle:mb-[20px];
+  }
+
+  /******** Small Screens *********/
+
+  .edrea_tm_home .name {
+    @apply small:text-[40px] small:mb-[14px];
+  }
+  .edrea_tm_home .job {
+    @apply small:text-[18px] small:mb-[30px];
+  }
+  .edrea_tm_modalbox .box_inner {
+    @apply small:w-[300px];
+  }
+  .edrea_tm_modalbox .close a {
+    @apply small:w-[20px] small:h-[20px];
+  }
+  .edrea_tm_modalbox .close a i {
+    @apply small:text-[10px];
+  }
+  .circular_progress_bar ul li {
+    @apply small:w-[50%];
+  }
+  .edrea_tm_modalbox .about_popup_details .timeline .list ul li .list_inner {
+    @apply small:flex-col;
+  }
+  .edrea_tm_modalbox .about_popup_details .timeline .list ul li .place {
+    @apply small:pl-0 small:w-full;
+  }
+  .edrea_tm_modalbox .about_popup_details .timeline .list ul li .time {
+    @apply small:w-auto small:p-0 small:mb-[20px];
+  }
+  .edrea_tm_modalbox .about_popup_details .testimonial .list ul li .text {
+    @apply small:p-[30px];
+  }
+  .edrea_tm_modalbox
+    .about_popup_details
+    .testimonial
+    .list
+    ul
+    li
+    .text:before {
+    @apply small:left-[30px];
+  }
+  .edrea_tm_modalbox .about_popup_details .testimonial .list ul li .text:after {
+    @apply small:left-[30px];
+  }
+  .edrea_tm_modalbox .about_popup_details .testimonial .details {
+    @apply small:pl-[0px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details {
+    @apply small:pl-[20px] small:pr-[20px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title h3 {
+    @apply small:text-[20px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .additional_images ul {
+    @apply small:m-0;
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .additional_images ul li {
+    @apply small:w-full small:pl-[0px];
+  }
+  .edrea_tm_modalbox .portfolio_popup_details .portfolio_main_title {
+    @apply small:mb-[18px];
+  }
+  .edrea_tm_modalbox .news_popup_details {
+    @apply small:pl-[20px] small:pr-[20px];
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title h3 {
+    @apply small:text-[20px];
+  }
+  .edrea_tm_modalbox .news_popup_details .news_main_title {
+    @apply small:mb-[18px];
+  }
+}

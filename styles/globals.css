@@ -1,0 +1,126 @@
+@import "react-circular-progressbar/dist/styles.css";
+.edrea_tm_modalbox {
+  top: -70px;
+}
+@media (max-width: 1040px) {
+  .edrea_tm_content {
+    z-index: 99;
+  }
+}
+.edrea_tm_button .a {
+  text-transform: none;
+  font-weight: unset;
+  text-decoration: none;
+  letter-spacing: none;
+  height: unset;
+  padding: 15px 40px;
+}
+
+.edrea_tm_mobile_menu,
+.edrea_tm_settings {
+  z-index: 999;
+}
+svg.CircularProgressbar {
+  width: 110px;
+  height: 110px;
+}
+.CircularProgressbar .CircularProgressbar-text {
+  fill: unset !important;
+  font-size: unset;
+}
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #eb4a4c;
+}
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #a2a2a2;
+  stroke-linecap: round;
+}
+.testimonial {
+  overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .waves canvas {
+    bottom: -34px;
+    position: fixed;
+  }
+}
+
+/* image popup */
+img.mfp-img {
+  box-shadow: 0 0 8px rgb(0 0 0 / 60%);
+  position: absolute;
+  max-height: 392px;
+  padding: 0 !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mfp-img-container .mfp-content {
+  max-width: 400px !important;
+}
+.mfp-img-container .mfp-close {
+  top: -110px;
+  right: -24px;
+}
+
+.edrea_tm_modalbox {
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 20;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.edrea_tm_section#BTS {
+  display: none;
+}
+
+.edrea_tm_section#BTS.active {
+  display: block;
+}
+
+.edrea_tm_section {
+  display: none;
+  height: auto;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.edrea_tm_section.active {
+  display: block;
+}
+
+#BTS.active {
+  display: block;
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* Masquer la barre de défilement pour Chrome, Safari et Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Masquer la barre de défilement pour IE, Edge et Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
