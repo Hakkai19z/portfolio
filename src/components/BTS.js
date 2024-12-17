@@ -3,9 +3,10 @@ import { useContext } from "react";
 import { context } from "../context/context";
 import { FaEye, FaDownload } from "react-icons/fa";
 
+
 const BTS = () => {
   const { nav } = useContext(context);
-  
+
   return (
     <div className={`edrea_tm_section ${nav === "BTS" ? "active" : ""}`} id="BTS">
       <div className="section_inner">
@@ -36,7 +37,7 @@ const BTS = () => {
                     <p>
                       SOLUTIONS D'INFRASTRUCTURE, SYSTEMES ET RESEAUX
                       La spécialisation SISR forme des professionnels des réseaux et équipements informatiques
-                      (installation, maintenance, sécurité). Cela signifie intervenir sur la conception, 
+                      (installation, maintenance, sécurité). Cela signifie intervenir sur la conception,
                       la mise en place, le déploiement, la maintenance et le maintien de sa sécurité.
                     </p>
                   </div>
@@ -44,7 +45,7 @@ const BTS = () => {
                     <h4 className="text-[20px] mb-[15px] text-pink-color">SLAM</h4>
                     <p>
                       SOLUTIONS LOGICIELLES ET APPLICATIONS METIERS
-                      La spécialisation SLAM est plus orientée développement. 
+                      La spécialisation SLAM est plus orientée développement.
                       Elle forme des professionnels au développement d'applications,
                       (sites web, applications mobiles, logiciels) et à la rédaction de
                       documentations techniques liées à celles-ci.
@@ -72,7 +73,7 @@ const BTS = () => {
                         <li className="mb-[10px]">Concepteur développeur web</li>
                         <li className="mb-[10px]">Développeur de solutions mobiles et connectées</li>
                         <li className="mb-[10px]">Concepteur développeur d'applications</li>
-                  </ul>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -92,16 +93,9 @@ const BTS = () => {
 
             {/* Boutons déplacés ici, après tout le contenu */}
             <div className="w-full flex flex-col items-center gap-4 py-[40px]">
+
               <a
-                href="TableauDeSynthese.xlsx"
-                download
-                className="bg-[#222] hover:bg-[#333] px-8 py-3 rounded-[10px] transition-all duration-300 flex items-center gap-2"
-              >
-                <FaDownload />
-                Télécharger Mon Tableau De Synthèse
-              </a>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1tFX-X9rOjv535BDMvtGl-u-IIxthB5MO/edit?usp=drive_link&ouid=118027636092971870930&rtpof=true&sd=true"
+                href="https://docs.google.com/spreadsheets/d/1LUAp2ftecfJ4nwXgfEXZda17hfyW2aPC/edit?usp=drive_link&ouid=118027636092971870930&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#222] hover:bg-[#333] px-8 py-3 rounded-[10px] transition-all duration-300 flex items-center gap-2"
