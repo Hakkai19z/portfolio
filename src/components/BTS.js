@@ -95,7 +95,7 @@ const BTS = () => {
             <div className="w-full flex flex-col items-center gap-4 py-[40px]">
 
               <a
-                href="https://docs.google.com/spreadsheets/d/1XwalSPwd7GKfJQ4WcQkXJPLfYZY2sj-t/edit?usp=sharing&ouid=118027636092971870930&rtpof=true&sd=true"
+                href="https://docs.google.com/spreadsheets/d/1_Cbe9h3c3705M7o7eW4qditOxy2t79Tm/edit?usp=sharing&ouid=105758782550279000898&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#222] hover:bg-[#333] px-8 py-3 rounded-[10px] transition-all duration-300 flex items-center gap-2"
