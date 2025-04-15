@@ -50,6 +50,7 @@ const data = [
     ],
     extraImages: ["assets/img/news/15.jpg"],
     githubLink: "https://github.com/Waayne78/SpaceOdyssey.git",
+    docLink: "https://www.canva.com/design/DAF6n4U5Z9c/1mNmi_Lm7cnIxC-AUftduQ/view?utm_content=DAF6n4U5Z9c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hef5afe5101",
   },
   {
     title: "GLPI",

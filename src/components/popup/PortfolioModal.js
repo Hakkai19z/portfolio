@@ -35,7 +35,7 @@ const PortfolioModal = () => {
             précieuses qui peuvent être analysées pour optimiser les processus
             et améliorer la prise de décision.
           </p>
-          <p>
+          <p className="mb-[20px]">
             Les applications de l'IoT s'étendent bien au-delà de la domotique,
             touchant des domaines aussi variés que l'agriculture de précision,
             la surveillance médicale à distance, la gestion intelligente des
@@ -47,6 +47,16 @@ const PortfolioModal = () => {
             faisant de la standardisation des protocoles et du renforcement de
             la cybersécurité des enjeux cruciaux.
           </p>
+          <div className="veille_link w-full text-center mb-[20px]">
+            <a 
+              href="https://www.canva.com/design/DAGBYaJ2jyg/l_zhnKN5hxXYZ0WYxarw3A/view?utm_content=DAGBYaJ2jyg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h28fe19ce7c" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-[20px] py-[10px] bg-pink-color text-white rounded-[5px] inline-block hover:bg-opacity-80 transition-all duration-300"
+            >
+              Consulter la veille complète
+            </a>
+          </div>
         </div>
         <div className="additional_images w-full h-auto clear-both float-left">
           <ul className="gallery_zoom ml-[-30px] list-none">

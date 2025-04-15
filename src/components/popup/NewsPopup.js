@@ -69,6 +69,21 @@ const NewsPopup = () => {
                 <i className="icon-right-open-1" />
               </a>
             )}
+            {newsData?.docLink && (
+              <a
+                href={newsData.docLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                style={{
+                  border: `1px solid ${color || "#eb4a4c"}`,
+                  boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                }}
+              >
+                <span>Voir la documentation AP1</span>
+                <i className="icon-right-open-1" />
+              </a>
+            )}
           </div>
         </div>
 
