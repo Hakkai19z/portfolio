@@ -123,4 +123,31 @@ img.mfp-img {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Style spécifique pour le bouton CV */
+.cv-button-container {
+  margin: 20px 0;
+  width: 100%;
+  display: block;
+  clear: both;
+  float: left;
+}
+
+.cv-button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  padding: 12px 30px !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.cv-button:hover {
+  background-color: #eb4a4c !important;
+}
+
 

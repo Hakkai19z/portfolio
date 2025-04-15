@@ -187,8 +187,14 @@ const AboutPopup = () => {
               </ul>
             </div>
             
-            <div className="edrea_tm_button full">
-              <a href="assets/img/about/cv.jpg" download="">
+            <div className="cv-button-container">
+              <a href="assets/img/about/CV de Mokhtari Kahil Airbus (1).pdf" download=""
+                 className="block w-full text-center py-3 px-6 bg-[#222] hover:bg-pink-color rounded-[50px] text-white-color transition-all duration-300"
+                 style={{
+                   border: `2px solid ${color}`,
+                   boxShadow: `0 0 10px ${color}40`
+                 }}
+              >
                 Mon CV
               </a>
             </div>

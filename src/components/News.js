@@ -1,5 +1,4 @@
 import { Fragment, useContext } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { context } from "../context/context";
 import { newsSlider } from "../sliderProps";
@@ -17,6 +16,7 @@ const data = [
       "Grâce à cette double approche, l'application se distingue par sa flexibilité et son utilité, répondant efficacement aux divers besoins des utilisateurs.",
     ],
     extraImages: ["assets/img/news/16.jpg"],
+    githubLink: "",
   },
   {
     title: "Shifumi game design and development",
@@ -27,6 +27,7 @@ const data = [
       "Le programme détermine ensuite le gagnant en comparant les choix du joueur et de l'ordinateur selon les règles classiques du Shifoumi. Ce projet est une excellente démonstration de l'utilisation de JavaScript pour créer des interactions dynamiques et amusantes sur une page web.",
     ],
     extraImages: ["assets/img/news/2.jpg"],
+    githubLink: "",
   },
   {
     title: "Bibliotheque app design and development",
@@ -37,17 +38,18 @@ const data = [
       "Les utilisateurs peuvent ajouter des livres à leur bibliothèque personnelle, enregistrant automatiquement les détails dans la base de données. Ils peuvent également gérer leur bibliothèque (ajout, visualisation, suppression de livres) et mettre à jour leurs informations personnelles à tout moment.",
     ],
     extraImages: ["assets/img/news/17.jpg"],
-
+    githubLink: "",
   },
   {
-    title: "Space Odyssey design and development",
+    title: "AP1 - Space Odyssey design and development",
     img: "assets/img/news/10.jpg",
     tag: "Php, Javascript, HTML, CSS",
     des: [
-      "Pour mon premier projet (AP1), j'ai créé un site nommé Space Odyssey, qui propose un service innovant de réservation de vols et d’hôtels dans l’espace. J'ai imaginé l'identité de l'entreprise, conçu un logo, élaboré une charte graphique et trouvé un slogan accrocheur.",
+      "Pour mon premier projet (AP1), j'ai créé un site nommé Space Odyssey, qui propose un service innovant de réservation de vols et d'hôtels dans l'espace. J'ai imaginé l'identité de l'entreprise, conçu un logo, élaboré une charte graphique et trouvé un slogan accrocheur.",
       "J'ai également décrit les produits et services, précisé le statut juridique fictif, et analysé la concurrence. Le site a été développé en HTML, CSS et JavaScript, avec un travail sur le référencement pour optimiser sa visibilité sur les moteurs de recherche et LinkedIn.",
     ],
     extraImages: ["assets/img/news/15.jpg"],
+    githubLink: "https://github.com/Waayne78/SpaceOdyssey.git",
   },
   {
     title: "GLPI",
@@ -59,6 +61,7 @@ const data = [
     ],
     extraImages: ["assets/img/news/21.jpeg"],
     btsLink: "https://drive.google.com/file/d/10DeFiz6JG0paZXFYuJg2SdT--J4VQHUy/view?usp=sharing",
+    githubLink: "",
   },
   {
     title: "ESHOP app design and development",
@@ -75,6 +78,7 @@ const data = [
 
       "Ce projet représente un pas important dans ma formation en développement web, consolidant ma maîtrise des outils et méthodologies nécessaires à la création d'applications e-commerce modernes. ",
     ],
+    githubLink: "",
   },
   {
     title: "Site vitrine design and development",
@@ -82,7 +86,7 @@ const data = [
     tag: "HTML, CSS",
     des: [],
     extraImages: ["assets/img/news/18.jpg"],
-
+    githubLink: "",
   },
   {
     title: "Food API design and development",
@@ -100,7 +104,7 @@ const data = [
       "Ce projet a été une excellente opportunité de travailler avec une API orientée données complexes, tout en développant des solutions concrètes pour les utilisateurs intéressés par la cuisine et la nutrition. ",
     ],
     extraImages: ["assets/img/news/19.jpg"],
-
+    githubLink: "",
   },
   {
     title: "Lord of battles design and development",
@@ -118,6 +122,7 @@ const data = [
       " Ce projet a été une excellente opportunité de créer un jeu de combat stratégique complet, alliant des mécaniques de jeu complexes à une expérience utilisateur immersive et accessible pour tous les types de joueurs, du débutant au plus expérimenté. ",
     ],
     extraImages: ["assets/img/news/20.jpg"],
+    githubLink: "",
   },
 ];
 

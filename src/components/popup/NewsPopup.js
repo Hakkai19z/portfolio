@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { context } from "../../context/context";
 import Modal from "./Modal";
+import { FaGithub } from "react-icons/fa";
 
 const NewsPopup = () => {
-  const { showNewsPopup, newsPopup, newsData } = useContext(context);
+  const { showNewsPopup, newsPopup, newsData, color } = useContext(context);
 
   return (
     <Modal open={newsPopup} close={showNewsPopup}>
@@ -14,7 +15,7 @@ const NewsPopup = () => {
         <div className="text w-full float-left">
           {/* Images supplémentaires */}
           {newsData?.extraImages && newsData.extraImages.length > 0 && (
-            <div className="mt-[20px]  gap-4">
+            <div className="mt-[20px] gap-4">
               {newsData.extraImages.map((image, index) => (
                 <div key={index} className="relative overflow-hidden rounded-[10px] mx-[5px]">
                   <img
@@ -41,17 +42,34 @@ const NewsPopup = () => {
               </a>
             </span>
           </div>
-          {newsData?.btsLink && (
-            <a
-              href={newsData.btsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
-            >
-              <span>Voir La documentations</span>
-              <i className="icon-right-open-1" />
-            </a>
-          )}
+          <div className="flex gap-3">
+            {newsData?.githubLink && (
+              <a
+                href={newsData.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                style={{
+                  border: `1px solid ${color || "#eb4a4c"}`,
+                  boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                }}
+              >
+                <FaGithub className="text-lg" />
+                <span>GitHub</span>
+              </a>
+            )}
+            {newsData?.btsLink && (
+              <a
+                href={newsData.btsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+              >
+                <span>Voir La documentation</span>
+                <i className="icon-right-open-1" />
+              </a>
+            )}
+          </div>
         </div>
 
         {/* Description */}
