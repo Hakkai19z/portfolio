@@ -5,6 +5,22 @@ import { newsSlider } from "../sliderProps";
 
 const data = [
   {
+    title: "AP1 - Space Odyssey design and development",
+    img: "assets/img/news/10.jpg",
+    tag: "Php, Javascript, HTML, CSS",
+    des: [
+      "Pour mon premier projet (AP1), j'ai créé un site nommé Space Odyssey, qui propose un service innovant de réservation de vols et d'hôtels dans l'espace. J'ai imaginé l'identité de l'entreprise, conçu un logo, élaboré une charte graphique et trouvé un slogan accrocheur.",
+      "J'ai également décrit les produits et services, précisé le statut juridique fictif, et analysé la concurrence. Le site a été développé en HTML, CSS et JavaScript, avec un travail sur le référencement pour optimiser sa visibilité sur les moteurs de recherche et LinkedIn.",
+    ],
+    extraImages: ["assets/img/news/15.jpg"],
+    githubLink: "https://github.com/Waayne78/SpaceOdyssey.git",
+    docLink: "https://www.canva.com/design/DAF6n4U5Z9c/1mNmi_Lm7cnIxC-AUftduQ/view?utm_content=DAF6n4U5Z9c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hef5afe5101",
+    docLinks: [
+      "https://www.canva.com/design/DAF6n4U5Z9c/1mNmi_Lm7cnIxC-AUftduQ/view?utm_content=DAF6n4U5Z9c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hef5afe5101",
+      "https://drive.google.com/file/d/1Rvh-DoEz-aiQQ30ogCGJBTnkbF9h7ZW-/view?usp=sharing"
+    ],
+  },
+  {
     title: "Wetther app design and development",
     img: "assets/img/news/14.jpg",
     tag: "Javascript",
@@ -19,15 +35,36 @@ const data = [
     githubLink: "",
   },
   {
-    title: "Shifumi game design and development",
-    img: "assets/img/news/7.jpg",
-    tag: "Javascript",
+    title: "Mon AP3 - GSB MedOrder",
+    img: "assets/img/news/ap3-logo.png",
+    tag: "React, PHP, Javascript",
     des: [
-      "J'ai développé un jeu de Shifoumi en JavaScript où le joueur peut jouer contre l'ordinateur. Le jeu offre au joueur la possibilité de choisir entre pierre, papier ou ciseaux, et l'ordinateur fait également un choix aléatoire parmi ces options.",
-      "Le programme détermine ensuite le gagnant en comparant les choix du joueur et de l'ordinateur selon les règles classiques du Shifoumi. Ce projet est une excellente démonstration de l'utilisation de JavaScript pour créer des interactions dynamiques et amusantes sur une page web.",
+      "J'ai développé l'application GSB MedOrder dans le cadre de mon AP3, qui est une application de gestion de commandes de médicaments pour le laboratoire Galaxy Swiss Bourdin.",
+      "Ce projet utilise React pour le frontend et PHP pour le backend, offrant une interface moderne et intuitive pour les utilisateurs.",
+      "L'application permet aux visiteurs médicaux de passer des commandes de médicaments, de suivre l'état de leurs commandes, et aux administrateurs de gérer l'ensemble du processus de commande.",
     ],
-    extraImages: ["assets/img/news/2.jpg"],
-    githubLink: "",
+    extraImages: ["assets/img/news/AP3.png"],
+    githubLink: "https://github.com/Waayne78/GSB-MedOrder.git",
+    docLinks: [
+      "https://drive.google.com/file/d/1G01Op_AHxjt7pCqr6haGFNgrY24kPUIu/view?usp=sharing",
+      "https://drive.google.com/file/d/1C__Pu-D5cNZ5qqxoxLLggz71uTM0JTiS/view?usp=sharing"
+    ],
+  },
+  {
+    title: "Mon AP4 - Application Mobile",
+    img: "assets/img/news/ap4-logo.png",
+    tag: "Flutter, Dart, PHP",
+    des: [
+      "Pour mon AP4, j'ai développé une application mobile cross-platform en utilisant Flutter et Dart, accompagnée d'un backend en PHP.",
+      "Cette application permet aux utilisateurs de consulter et gérer leurs informations depuis leur smartphone, offrant une expérience utilisateur fluide et intuitive sur iOS et Android.",
+      "Le projet met en œuvre les principes du développement mobile moderne avec une architecture robuste, une interface utilisateur responsive et une gestion efficace des données."
+    ],
+    extraImages: ["assets/img/news/ap4 logo.png"],
+    githubLink: "https://github.com/Waayne78/ap4.git",
+    docLinks: [
+      "https://drive.google.com/file/d/1_O7ho3KL3XaGYwxVn25eoQjC6wVShArY/view?usp=sharing",
+      "https://drive.google.com/file/d/1yLOHz6kyNX5WmsQXSnOy0i3Le6u0vARd/view?usp=sharing"
+    ],
   },
   {
     title: "Bibliotheque app design and development",
@@ -39,18 +76,6 @@ const data = [
     ],
     extraImages: ["assets/img/news/17.jpg"],
     githubLink: "",
-  },
-  {
-    title: "AP1 - Space Odyssey design and development",
-    img: "assets/img/news/10.jpg",
-    tag: "Php, Javascript, HTML, CSS",
-    des: [
-      "Pour mon premier projet (AP1), j'ai créé un site nommé Space Odyssey, qui propose un service innovant de réservation de vols et d'hôtels dans l'espace. J'ai imaginé l'identité de l'entreprise, conçu un logo, élaboré une charte graphique et trouvé un slogan accrocheur.",
-      "J'ai également décrit les produits et services, précisé le statut juridique fictif, et analysé la concurrence. Le site a été développé en HTML, CSS et JavaScript, avec un travail sur le référencement pour optimiser sa visibilité sur les moteurs de recherche et LinkedIn.",
-    ],
-    extraImages: ["assets/img/news/15.jpg"],
-    githubLink: "https://github.com/Waayne78/SpaceOdyssey.git",
-    docLink: "https://www.canva.com/design/DAF6n4U5Z9c/1mNmi_Lm7cnIxC-AUftduQ/view?utm_content=DAF6n4U5Z9c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hef5afe5101",
   },
   {
     title: "GLPI",
@@ -79,14 +104,6 @@ const data = [
 
       "Ce projet représente un pas important dans ma formation en développement web, consolidant ma maîtrise des outils et méthodologies nécessaires à la création d'applications e-commerce modernes. ",
     ],
-    githubLink: "",
-  },
-  {
-    title: "Site vitrine design and development",
-    img: "assets/img/news/13.jpg",
-    tag: "HTML, CSS",
-    des: [],
-    extraImages: ["assets/img/news/18.jpg"],
     githubLink: "",
   },
   {

@@ -27,7 +27,7 @@ const Portfolio = () => {
                       />
                       <div
                         className="main absolute inset-0 bg-no-repeat bg-center bg-cover scale-[1] transition-all duration-300"
-                        data-img-url="assets/img/portfolio/4.jpg"
+                        data-img-url="assets/img/portfolio/iot.jpg"
                       />
                     </div>
                     <div className="details absolute z-[2] bottom-[-100] left-[20px] bg-white-color px-[20px] py-[10px] rounded-[5px] transition-all duration-300">

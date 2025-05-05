@@ -6,27 +6,28 @@ import { FaGithub } from "react-icons/fa";
 const NewsPopup = () => {
   const { showNewsPopup, newsPopup, newsData, color } = useContext(context);
 
+  const getDisplayImage = (newsData) => {
+    if (newsData?.title?.includes("AP3")) {
+      return "assets/img/news/AP3.png";
+    }
+    return newsData?.extraImages?.[0] || newsData?.img;
+  };
+
   return (
     <Modal open={newsPopup} close={showNewsPopup}>
       <div className="news_popup_details w-full h-auto clear-both float-left px-[50px] pt-[50px] pb-[42px]">
 
-        {/* Supprimé la section image dynamique */}
-
+        {/* Images supplémentaires */}
         <div className="text w-full float-left">
-          {/* Images supplémentaires */}
-          {newsData?.extraImages && newsData.extraImages.length > 0 && (
-            <div className="mt-[20px] gap-4">
-              {newsData.extraImages.map((image, index) => (
-                <div key={index} className="relative overflow-hidden rounded-[10px] mx-[5px]">
-                  <img
-                    className="w-full h-auto object-cover"
-                    src={image}
-                    alt={`Extra ${index + 1}`}
-                  />
-                </div>
-              ))}
+          <div className="mt-[20px] gap-4">
+            <div className="relative overflow-hidden rounded-[10px] mx-[5px]">
+              <img
+                className="w-full h-auto object-cover"
+                src={getDisplayImage(newsData)}
+                alt={`Image principale`}
+              />
             </div>
-          )}
+          </div>
         </div>
 
         {/* Titre et étiquette */}
@@ -83,6 +84,89 @@ const NewsPopup = () => {
                 <span>Voir la documentation AP1</span>
                 <i className="icon-right-open-1" />
               </a>
+            )}
+            {newsData?.title?.includes("AP1") && newsData?.docLinks && newsData.docLinks.length > 0 && (
+              <>
+                {newsData.docLinks[1] && (
+                  <a
+                    href={newsData.docLinks[1]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                    style={{
+                      border: `1px solid ${color || "#eb4a4c"}`,
+                      boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                    }}
+                  >
+                    <span>Doc AP1 - Documentation technique</span>
+                    <i className="icon-right-open-1" />
+                  </a>
+                )}
+              </>
+            )}
+            {newsData?.title?.includes("AP3") && newsData?.docLinks && newsData.docLinks.length > 0 && (
+              <>
+                <a
+                  href={newsData.docLinks[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                  style={{
+                    border: `1px solid ${color || "#eb4a4c"}`,
+                    boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                  }}
+                >
+                  <span>Doc AP3 - Cahier des charges</span>
+                  <i className="icon-right-open-1" />
+                </a>
+                {newsData.docLinks[1] && (
+                  <a
+                    href={newsData.docLinks[1]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                    style={{
+                      border: `1px solid ${color || "#eb4a4c"}`,
+                      boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                    }}
+                  >
+                    <span>Doc AP3 - Documentation technique</span>
+                    <i className="icon-right-open-1" />
+                  </a>
+                )}
+              </>
+            )}
+            {newsData?.title?.includes("AP4") && newsData?.docLinks && newsData.docLinks.length > 0 && (
+              <>
+                <a
+                  href={newsData.docLinks[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                  style={{
+                    border: `1px solid ${color || "#eb4a4c"}`,
+                    boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                  }}
+                >
+                  <span>Doc AP4 - Cahier des charges</span>
+                  <i className="icon-right-open-1" />
+                </a>
+                {newsData.docLinks[1] && (
+                  <a
+                    href={newsData.docLinks[1]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#222] hover:bg-pink-color px-4 py-2 rounded-[5px] text-white-color transition-all duration-300 flex items-center gap-2"
+                    style={{
+                      border: `1px solid ${color || "#eb4a4c"}`,
+                      boxShadow: `0 0 5px ${color || "#eb4a4c"}40`
+                    }}
+                  >
+                    <span>Doc AP4 - Documentation technique</span>
+                    <i className="icon-right-open-1" />
+                  </a>
+                )}
+              </>
             )}
           </div>
         </div>
