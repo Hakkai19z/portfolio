@@ -21,18 +21,17 @@ const data = [
     ],
   },
   {
-    title: "Wetther app design and development",
-    img: "assets/img/news/14.jpg",
-    tag: "Javascript",
+    title: "AP2 - Début et gestion du projet AP3/AP4",
+    img: "assets/img/news/Gemini_Generated.jpg",
+    tag: "Gestion de projet, Analyse",
     des: [
-      "Cette application de météo, développée en utilisant JavaScript, offre aux utilisateurs une expérience simple et intuitive pour obtenir des prévisions météorologiques.",
-      "Elle propose deux options distinctes pour accéder aux informations. La première option utilise la localisation actuelle de l'utilisateur, détectée automatiquement, pour fournir des prévisions précises et en temps réel.",
-      "Cette fonctionnalité est idéale pour ceux qui souhaitent connaître rapidement la météo locale sans aucune saisie supplémentaire.",
-      "La deuxième option permet aux utilisateurs d'entrer manuellement le nom d'une ville dans un champ de saisie, offrant ainsi la possibilité de consulter les conditions météorologiques de n'importe quelle ville dans le monde.",
-      "Grâce à cette double approche, l'application se distingue par sa flexibilité et son utilité, répondant efficacement aux divers besoins des utilisateurs.",
+      "L'AP2 marque le début et la gestion de mon projet AP3 et AP4. J'y ai posé les bases de l'analyse, de la planification et de la structuration du projet, en préparant toute la documentation nécessaire pour la suite du développement.",
+      "Ce travail a permis d'assurer une transition fluide vers les phases de développement (AP3) et de finalisation (AP4)."
     ],
-    extraImages: ["assets/img/news/16.jpg"],
-    githubLink: "",
+    extraImages: ["assets/img/news/Gemini_Generated.jpg"],
+    docLinks: [
+      "https://drive.google.com/file/d/1Z9eHr6WigeBCbeKm1jVcD_sIL2zbHISA/view?usp=sharing"
+    ]
   },
   {
     title: "Mon AP3 - GSB MedOrder",
@@ -90,57 +89,40 @@ const data = [
     githubLink: "",
   },
   {
-    title: "ESHOP app design and development",
-    img: "assets/img/news/9.jpg",
-    tag: "Php, Javascript, HTML, CSS",
+    title: "BlueGen - IA SOCOTEC",
+    img: "assets/img/news/bluegen_logo.jpg",
+    tag: "Intelligence Artificielle, TensorFlow/PyTorch",
     des: [
-      "J'ai développé une application E-shop en PHP, exploitant une API pour gérer efficacement les produits et les commandes. Ce projet m'a permis de mettre en pratique des compétences avancées en développement web, notamment : ",
-
-      "- Back-end : Conception et implémentation d'une architecture robuste en PHP pour assurer un traitement fluide des données. ",
-      "- API : Intégration d'une API permettant des actions comme l'ajout, la modification et la suppression des produits, ainsi que la gestion des commandes clients. ",
-      "- Front-end : Création d'une interface utilisateur intuitive et responsive pour offrir une expérience d'achat optimale. ",
-      "- Gestion des données : Mise en place d'une base de données structurée pour le stockage sécurisé des informations sur les produits et les commandes. ",
-      "- Performance et sécurité : Optimisation des performances de l'application et ajout de mesures pour garantir la sécurité des transactions et des données.  ",
-
-      "Ce projet représente un pas important dans ma formation en développement web, consolidant ma maîtrise des outils et méthodologies nécessaires à la création d'applications e-commerce modernes. ",
+      "J'ai grandement participé au développement de BlueGen, la nouvelle intelligence artificielle de SOCOTEC. Ce projet innovant vise à accompagner les collaborateurs dans leurs tâches quotidiennes grâce à une interface intuitive et des fonctionnalités avancées d'IA.",
+      "J'ai contribué à la conception, au développement et à l'intégration de l'IA, ainsi qu'à la rédaction de la documentation technique et fonctionnelle.",
+      "BlueGen est accessible à tous les collaborateurs via une plateforme web sécurisée."
     ],
-    githubLink: "",
+    extraImages: ["assets/img/news/bluegen_logo.jpg"],
+    accessLink: "https://bluegen.socotec.com/",
+    docLinks: [
+      "https://drive.google.com/file/d/1nq0Y3Xo1NRAbx4PdHRsJEkUN8B4FRz3l/view?usp=sharing",
+      "https://drive.google.com/file/d/1gVS_6XIDE9pH4tHftzLhYGgPnr0P3FFS/view?usp=sharing"
+    ],
   },
   {
-    title: "Food API design and development",
-    img: "assets/img/news/11.jpg",
-    tag: "PHP, Javascript",
+    title: "Scripts PowerShell SOCOTEC (pwhsoco)",
+    img: "assets/img/news/Socotec.png",
+    tag: "PowerShell, Active Directory, Automatisation",
     des: [
-      "J'ai développé une application exploitant une **Food API** pour gérer et afficher des données alimentaires. Ce projet m'a permis de renforcer mes compétences en développement web, notamment :  ",
-
-      "- Back-end : Utilisation de PHP pour interagir avec la Food API et traiter les données reçues. ",
-      "- API : Intégration d'une API permettant des recherches avancées, des filtres par catégorie ou ingrédient, et l'affichage d'informations détaillées sur les recettes ou les produits alimentaires. ",
-      "- Front-end : Développement d'une interface utilisateur responsive, facilitant la navigation et la recherche pour offrir une expérience fluide. ",
-      "- Gestion des données : Analyse et affichage des informations reçues de l'API, avec une structuration claire et accessible. ",
-      "- Performance et expérience utilisateur : Optimisation de la vitesse de chargement et mise en œuvre de fonctionnalités interactives pour améliorer l'expérience globale. ",
-
-      "Ce projet a été une excellente opportunité de travailler avec une API orientée données complexes, tout en développant des solutions concrètes pour les utilisateurs intéressés par la cuisine et la nutrition. ",
+      "Ce projet regroupe plusieurs scripts PowerShell développés pour automatiser la gestion des utilisateurs et des licences au sein de SOCOTEC. L'accès aux scripts est protégé par mot de passe.",
+      "- ResetMDPWD.ps1 : Réinitialisation automatisée des mots de passe pour les nouveaux arrivants à partir d'un fichier Excel SharePoint, génération de mot de passe, journalisation et gestion sécurisée.",
+      "- Export-Excel-Users.ps1 : Nettoyage, vérification et enrichissement d'un fichier Excel d'utilisateurs en interrogeant l'Active Directory, gestion des doublons, mise à jour des statuts et licences, et export du résultat.",
+      "- Donnees-Users.ps1 : Vérification détaillée d'un utilisateur dans l'Active Directory, affichage des informations, groupes, avertissements et recommandations.",
+      "- Set-ADUserM365Licence.ps1 : Modification automatisée de la licence M365 d'un utilisateur dans l'Active Directory (remplacement P1 par E1)."
     ],
-    extraImages: ["assets/img/news/19.jpg"],
-    githubLink: "",
-  },
-  {
-    title: "Lord of battles design and development",
-    img: "assets/img/news/12.jpg",
-    tag: "PHP, Javascript",
-    des: [
-      "J'ai développé une application de jeu de combat stratégique, exploitant une Game Engine API pour gérer les affrontements et les statistiques des personnages de Game of Thrones. Ce projet m'a permis de renforcer mes compétences en développement de jeux, notamment : ",
-
-      " Back-end : Utilisation de C# pour gérer la logique de combat, les systèmes de score et la progression des joueurs, avec une architecture permettant des calculs complexes de dégâts et d'effets spéciaux. ",
-      " API : Intégration d'une API de combat permettant la gestion des affrontements en temps réel, un système de classement, et l'accès aux statistiques détaillées des personnages, leurs équipements et leurs compétences. ",
-      " Front-end : Développement d'une interface de combat dynamique avec des animations fluides, des effets visuels impressionnants et un système de contrôle intuitif adapté aussi bien au PC qu'aux appareils mobiles. ",
-      " Gestion des données : Implémentation d'un système robuste pour suivre l'évolution des personnages, leurs équipements, leurs victoires et défaites, ainsi que leur progression dans les différents modes de jeu. ",
-      " Performance et expérience utilisateur : Optimisation des animations de combat, réduction des temps de chargement et mise en place d'un système de matchmaking équilibré pour garantir des affrontements équitables et passionnants. ",
-
-      " Ce projet a été une excellente opportunité de créer un jeu de combat stratégique complet, alliant des mécaniques de jeu complexes à une expérience utilisateur immersive et accessible pour tous les types de joueurs, du débutant au plus expérimenté. ",
+    extraImages: ["assets/img/news/Socotec.png"],
+    scriptLinks: [
+      { name: "ResetMDPWD - Documentation", path: "https://docs.google.com/document/d/1EsYvTnkUeOvNJjfH2kPNgC7BT84rlJ_M/edit?usp=sharing&ouid=105758782550279000898&rtpof=true&sd=true" },
+      { name: "Export-Excel-Users - Documentation", path: "https://docs.google.com/document/d/1fLU0eJbskfwjuaYZThomTgXujvaOR-OJ/edit?usp=sharing&ouid=105758782550279000898&rtpof=true&sd=true" },
+      { name: "Donnees-Users - Documentation", path: "https://docs.google.com/document/d/1BxGFPLrleTLrdbD9qbZlSR7qezkWJSWf/edit?usp=sharing&ouid=105758782550279000898&rtpof=true&sd=true" },
+      { name: "Set-ADUserM365Licence - Documentation", path: "https://docs.google.com/document/d/1dv9s2JSw7E5U7M_a1_Rz6Xpx46oqGRtv/edit?usp=sharing&ouid=105758782550279000898&rtpof=true&sd=true" }
     ],
-    extraImages: ["assets/img/news/20.jpg"],
-    githubLink: "",
+    passwordProtected: true
   },
 ];
 
