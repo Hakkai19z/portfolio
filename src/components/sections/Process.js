@@ -36,7 +36,6 @@ export default function Process() {
         <div className="process-timeline">
           {STEPS.map((step, i) => (
             <div key={i} className="process-card" style={{ "--delay": `${0.1 + i * 0.15}s` }}>
-              <div className="process-card__bg-num">{step.num}</div>
               <div className="process-card__top">
                 <div className="process-card__icon-ring">
                   <span className="process-card__icon">{step.icon}</span>
