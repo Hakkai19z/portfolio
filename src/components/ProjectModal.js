@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FaGithub, FaTimes, FaExternalLinkAlt, FaFileAlt } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 export default function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -36,24 +36,6 @@ export default function ProjectModal({ project, onClose }) {
           {project.description.map((para, i) => (
             <p key={i} className="modal__desc">{para}</p>
           ))}
-
-          <div className="modal__links">
-            {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer" className="modal__link">
-                <FaGithub /> GitHub
-              </a>
-            )}
-            {project.demo && (
-              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="modal__link">
-                <FaExternalLinkAlt /> Démo
-              </a>
-            )}
-            {project.docs && project.docs.map((doc, i) => (
-              <a key={i} href={doc.url} target="_blank" rel="noopener noreferrer" className="modal__link">
-                <FaFileAlt /> {doc.label}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </div>

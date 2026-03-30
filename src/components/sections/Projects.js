@@ -6,60 +6,54 @@ const PROJECTS = [
     tech: "PHP · MySQL · Bootstrap",
     gradient: "linear-gradient(135deg, #6366f1 0%, #4338ca 100%)",
     description: [
-      "Application web complète de gestion de flotte automobile : suivi des véhicules, chauffeurs et interventions en temps réel.",
-      "Tableau de bord administrateur, gestion des réservations, historique des maintenances et rapports exportables.",
+      "Application web complète de gestion de flotte automobile développée en PHP/MySQL. Le système centralise le suivi en temps réel des véhicules, des chauffeurs et des interventions techniques sur une interface unifiée.",
+      "Côté administration : tableau de bord avec indicateurs clés, gestion des réservations et des affectations, historique complet des maintenances et génération de rapports exportables en PDF/Excel.",
     ],
-    github: "https://github.com/Hakkai19z/OptiFleet",
   },
   {
     title: "Symfony Blog",
     tech: "Symfony · PHP · Twig · MySQL",
     gradient: "linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%)",
     description: [
-      "Blog complet développé avec Symfony — gestion des articles, catégories, commentaires et authentification utilisateur.",
-      "Architecture MVC propre, Doctrine ORM, formulaires Symfony et gestion des rôles admin/user.",
+      "Plateforme de blog full-featured construite sur le framework Symfony. L'application couvre la gestion des articles, des catégories, des commentaires et un système d'authentification sécurisé avec gestion des rôles admin/utilisateur.",
+      "Architecture MVC rigoureuse, Doctrine ORM pour la persistance des données, formulaires Symfony avec validation, et protection CSRF intégrée. Interfaces séparées pour les lecteurs et les administrateurs.",
     ],
-    github: "https://github.com/Hakkai19z/Synfony_Blog",
   },
   {
     title: "E-Shop",
     tech: "PHP · MySQL · HTML/CSS",
     gradient: "linear-gradient(135deg, #22d3ee 0%, #0284c7 100%)",
     description: [
-      "Site e-commerce avec catalogue produits, panier dynamique, système de commandes et interface d'administration.",
-      "Authentification sécurisée, gestion des stocks et suivi des commandes en temps réel.",
+      "Site e-commerce complet avec catalogue produits dynamique, panier persistant en session, tunnel de commande et interface d'administration dédiée à la gestion des produits et des commandes.",
+      "Authentification sécurisée avec hachage des mots de passe, gestion des stocks en temps réel, suivi du statut des commandes et tableau de bord vendeur avec statistiques de ventes.",
     ],
-    github: "https://github.com/Hakkai19z/ESHOP-",
   },
   {
     title: "Librairie",
     tech: "PHP · MySQL · API Google Books",
     gradient: "linear-gradient(135deg, #10b981 0%, #047857 100%)",
     description: [
-      "Application de gestion de bibliothèque intégrant l'API Google Books pour rechercher et ajouter des livres par genre ou titre.",
-      "Système d'inscription sécurisé, bibliothèque personnelle par utilisateur avec ajout, visualisation et suppression de livres.",
+      "Application de gestion de bibliothèque personnelle intégrant l'API Google Books pour enrichir automatiquement les fiches livres (couverture, synopsis, auteur) à partir d'une simple recherche par titre ou genre.",
+      "Chaque utilisateur dispose d'une bibliothèque privée avec ajout, visualisation et suppression de livres. Inscription sécurisée, sessions utilisateur et interface épurée orientée expérience de lecture.",
     ],
-    github: "https://github.com/Hakkai19z/Librairie",
   },
   {
     title: "Space Odyssey",
     tech: "PHP · JavaScript · HTML/CSS",
     img: "img/projects/space-odyssey.jpg",
     description: [
-      "Site de réservation de vols et d'hôtels dans l'espace — identité visuelle complète, logo, charte graphique et slogan.",
-      "Développé en HTML, CSS et JavaScript avec un travail sur le référencement SEO.",
+      "Site de réservation de vols et d'hôtels spatiaux — un projet créatif alliant développement web et direction artistique. Identité visuelle complète conçue from scratch : logo, charte graphique, typographie et slogan.",
+      "Développé en HTML, CSS et JavaScript vanilla avec une attention particulière portée au référencement SEO : balises sémantiques, méta descriptions, structure des URLs et optimisation des temps de chargement.",
     ],
-    github: "https://github.com/Hakkai19z/SpaceOdyssey",
   },
   {
     title: "Pierre Papier Ciseaux",
     tech: "JavaScript · HTML/CSS",
     gradient: "linear-gradient(135deg, #f97316 0%, #c2410c 100%)",
     description: [
-      "Jeu classique Pierre Papier Ciseaux jouable contre une IA, avec animations et score en temps réel.",
-      "Interface responsive, logique de jeu en JavaScript pur, sans dépendances externes.",
+      "Jeu classique Pierre Papier Ciseaux entièrement jouable contre une IA avec trois niveaux de difficulté. L'interface propose des animations fluides sur chaque action et un système de score en temps réel.",
+      "Développé en JavaScript pur sans aucune dépendance externe — logique de jeu, gestion des états, animations CSS et responsive design intégralement codés à la main.",
     ],
-    github: "https://github.com/Hakkai19z/Pierre-Papier-Ciseaux",
   },
 ];
 
