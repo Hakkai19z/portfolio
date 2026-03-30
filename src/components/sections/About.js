@@ -30,7 +30,7 @@ export default function About() {
 
           <div>
             <p className="about-bio">
-              Je suis <strong>Kahil Mokhtari</strong>, développeur web full-stack basé à Trappes.
+              Je suis <strong>Kahil Mokhtari</strong>, développeur web full-stack basé à Paris.
               Je transforme vos idées en produits digitaux concrets — sites modernes, applications web
               sur-mesure et outils Office automatisés qui font vraiment gagner du temps.
             </p>
