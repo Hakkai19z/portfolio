@@ -55,13 +55,6 @@ export default function About() {
 
             <div className="about-actions">
               <a
-                href="img/about/cv.pdf"
-                download="CV_Kahil_Mokhtari.pdf"
-                className="btn btn-primary"
-              >
-                ⬇ Télécharger le CV
-              </a>
-              <a
                 href="mailto:Kahil.mokhtari@gmail.com"
                 className="about-cv"
               >
