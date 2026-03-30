@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useApp } from "../../context/AppContext";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaMapMarkerAlt, FaLinkedin, FaEnvelope, FaClock } from "react-icons/fa";
 
 const INFO = [
   { icon: <FaMapMarkerAlt />, label: "Localisation",  value: "Paris, France",              href: null },
-  { icon: <FaPhone />,        label: "Téléphone",     value: "+33 6 46 13 08 52",          href: "tel:+33646130852" },
+  { icon: <FaLinkedin />,     label: "LinkedIn",      value: "Kahil Mokhtari",             href: "https://www.linkedin.com/in/kahil-mokhtari/" },
   { icon: <FaEnvelope />,     label: "Email",         value: "kahil.mokhtari@gmail.com",   href: "mailto:kahil.mokhtari@gmail.com" },
   { icon: <FaClock />,        label: "Disponibilité", value: "Réponse sous 24h",           href: null },
 ];
